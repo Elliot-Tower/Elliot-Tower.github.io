@@ -19,21 +19,52 @@
 			    width: 100%;
 			    height: 100%;
 			}
+			.video-container{
+			  width:100vw;
+			  height:100vh;
+			  overflow:hidden;
+			  position:relative;
+			}
+			.video-container iframe,{
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;
+			}
+			.video-container iframe, {
+			  pointer-events: none;
+			}
+			.video-container iframe{
+			  position: absolute;
+			  top: -60px;
+			  left: 0;
+			  width: 100%;
+			  height: calc(100% + 120px);
+			}
+			.video-foreground{
+			  pointer-events:none;
+			}
 		</style>
 	</head>
 	<body>
 
-	<div class="container">
+	<!--<div class="container">
 	<iframe src="//www.youtube.com/embed/Jm34ZZbl_iM?autoplay=1&loop=1&controls=0&rel=0&playlist=Jm34ZZbl_iM" 
 	frameborder="0" allowfullscreen class="video"></iframe>
-	</div>
-	<!--
-	<video id="autism" autoplay="" loop="">
-		<source src="media/autism.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
-		<source src="media/autism.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
-		<source src="media/autism.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
-		You don't support video. Only 90s browsers know what this isn't.
-	</video>
-	-->
+	</div>-->
+	
+		
+	
+
+<div class="video-container" >
+    <div class="video-foreground">
+        <iframe
+               src="https://www.youtube.com/embed/Jm34ZZbl_iM?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=Jm34ZZbl_iM&mute=0"
+               frameBorder="0" allowFullScreen>
+
+        </iframe>
+    </div>             
+</div>
 	</body>
 </html>
